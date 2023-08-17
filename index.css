@@ -1,0 +1,7 @@
+footer a{
+    text-decoration: none;
+    margin: 5px 10px;
+}
+footer a:hover{
+    color: bisque;
+}
