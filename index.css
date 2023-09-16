@@ -9,3 +9,11 @@ color:bisque;
   width: 900px;
   height: 470px;
 }
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .team-members {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
