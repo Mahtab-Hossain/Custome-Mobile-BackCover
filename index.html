@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/74.0.0/chromium/chromium_48x48.png">
   <!-- ==========Bootstrap CDN Link End Section ========== -->
+  <!-- ========== external style and script  Section ========== -->
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./script.js">
+  <!-- =========external style and script  Section ========== -->
 
 </head>
 
@@ -49,46 +53,50 @@
   <!-- ========== End Section ========== -->
 
 
-  <h1 class="bg-black">
+  
     <div class="container-fluid container-sm container-md text-light justify-content-center">
       <div class="container-fluid container-sm container-md justify-content-center text-center p-3" role="group" >
         <button type="button" class="btn btn-dark">Mobile Backcase</button>
         <button type="button" class="btn btn-dark">Laptop Backcase</button>
       </div>
     </div>
+
     <!-- ========== carosule Start Section ========== -->
-    <div id="carouselExampleIndicators" class="carousel slide align-content-center pb-3">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
+    <!-- Bootstrap Carousel Component -->
+    <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item d-flex justify-content-center active">
-          <img src="./Images/img1.jpg" class="d-block w-50 rounded-3" alt="first case">
-        </div>
-        <div class="carousel-item d-flex justify-content-center active">
-          <img src="./Images/img2.jpg" class="d-block w-50 rounded-3" alt="second case">
-        </div>
-        <div class="carousel-item d-flex justify-content-center active">
-          <img src="./Images/tmg3.jpg" class="d-block w-50 rounded-3" alt="third case">
-        </div>
+          <div class="carousel-item active">
+              <img src="./Images/img1.jpg" class="d-block w-100" alt="Image 1">
+              <div class="carousel-caption">
+                  <h2>Product 1</h2>
+                  <p>Description of Product 1</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="./Images/img2.jpg" class="d-block w-100" alt="Image 2">
+              <div class="carousel-caption">
+                  <h2>Product 2</h2>
+                  <p>Description of Product 2</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/tmg3.jpg" class="d-block w-100" alt="Image 3">
+              <div class="carousel-caption">
+                  <h2>Product 3</h2>
+              </div>
+          </div>
+          <!-- Add more slides as needed -->
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </h1>
+      <a class="carousel-control-prev" href="#imageSlider" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#imageSlider" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </a>
+  </div>
+
   <!-- ========== carosuleEnd Section ========== -->
 
   <!-- ========== new module Start Section ========== -->
