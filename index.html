@@ -21,7 +21,7 @@
   <!-- ==========Bootstrap CDN Link End Section ========== -->
   <!-- ========== external style and script  Section ========== -->
   <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="./script.js">
+  
   <!-- =========external style and script  Section ========== -->
 
 </head>
@@ -66,8 +66,8 @@
   
     <div class="container-fluid container-sm container-md text-light justify-content-center">
       <div class="container-fluid container-sm container-md justify-content-center text-center p-3" role="group" >
-        <button type="button" class="btn btn-dark">Mobile Backcase</button>
-        <button type="button" class="btn btn-dark">Laptop Backcase</button>
+        <button type="button" class="btn btn-dark" id="mobileButton">Mobile Backcase</button>
+        <button type="button" class="btn btn-dark" id="laptopButton">Laptop Backcase</button>
       </div>
     </div>
 
@@ -230,8 +230,30 @@
     </div>
   </footer>
   <!--Footer End-->
+<!-- ========== script Start Section ========== -->
+
+<script src="script.js"></script>
+
+<script>
+  // Get references to the buttons by their IDs
+  var mobileButton = document.getElementById("mobileButton");
+  var laptopButton = document.getElementById("laptopButton");
+
+  // Add click event listeners to the buttons
+  mobileButton.addEventListener("click", function() {
+    // Replace the content of the page with a message for Mobile Backcase
+    document.body.innerHTML = "<h1>Mobile Backcase Page</h1>";
+  });
+
+  laptopButton.addEventListener("click", function() {
+    // Replace the content of the page with a message for Laptop Backcase
+    document.body.innerHTML = "<h1>Laptop Backcase Page</h1>";
+  });
+</script>
 
 
+
+<!-- ======== script End Section ========== -->
 
 </body>
 
