@@ -39,3 +39,5 @@ document.getElementById('register-form').addEventListener('submit', function (e)
 
     alert('Registration Successful! You can now log in.');
 });
+
+// Get references to the buttons by their IDs
