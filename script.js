@@ -41,3 +41,48 @@ document.getElementById('register-form').addEventListener('submit', function (e)
 });
 
 // Get references to the buttons by their IDs
+
+//login start 
+const inputField = document.getElementById('inputField');
+const sendOTPBtn = document.getElementById('sendOTPBtn');
+const otpDiv = document.getElementById('otpDiv');
+const otpField = document.getElementById('otpField');
+const loginBtn = document.getElementById('loginBtn');
+
+sendOTPBtn.addEventListener('click', () => {
+    // Implement OTP generation logic here (not shown in this example)
+    function generateOTP() {
+        const length = 6; // Length of the OTP
+        let otp = '';
+    
+        for (let i = 0; i < length; i++) {
+            otp += Math.floor(Math.random() * 10); // Generate a random digit (0-9)
+        }
+    
+        return otp;
+    }
+    
+    // Simulate OTP generation for demonstration purposes
+    const generatedOTP = Math.floor(1000 + Math.random() * 9000);
+    alert(`OTP sent to ${inputField.value}: ${generatedOTP}`);
+    
+    // Show the OTP input field
+    otpDiv.style.display = 'block';
+    sendOTPBtn.style.display = 'none';
+});
+
+loginBtn.addEventListener('click', () => {
+    const enteredOTP = otpField.value;
+    // Implement OTP verification logic here (not shown in this example)
+    // For demonstration purposes, compare entered OTP with a generated OTP
+    //const generatedOTP = /* Retrieve the generated OTP */;
+    
+    if (enteredOTP === generatedOTP) {
+        alert('Login successful!');
+        // Redirect to the dashboard or perform other actions
+    } else {
+        alert('Invalid OTP. Please try again.');
+    }
+});
+
+//login end
