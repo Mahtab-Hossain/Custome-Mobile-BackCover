@@ -1,0 +1,8 @@
+{
+    "hosting": {
+      "site": "cmcs",
+  
+      "public": "public"
+      
+    }
+  }
